@@ -1,12 +1,12 @@
 name: sunmi_scan
-description: a sunmi scan sdk package, [only support android].
-version: 0.0.1
+description: a sunmi scan sdk package [ only support android ] base on official documentation.
+version: 0.0.2
 homepage: https://github.com/laiiihz/sunmi_pack
 repository: https://github.com/laiiihz/sunmi_pack/tree/master/packages/sunmi_scan
 issue_tracker: https://github.com/laiiihz/sunmi_pack/issues
 
 environment:
-  sdk: ">=2.15.1 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=2.5.0"
 
 dependencies:

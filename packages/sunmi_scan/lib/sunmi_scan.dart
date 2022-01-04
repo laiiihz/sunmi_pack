@@ -65,7 +65,7 @@ class SunmiScan {
   }
 
   /// 扫码
-  /// 
+  ///
   /// > call `SunmiScan.init()` before scan
   /// > 使用前请初始化 `SunmiScan.init()`
   ///
