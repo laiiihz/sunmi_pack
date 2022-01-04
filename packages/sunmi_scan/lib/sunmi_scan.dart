@@ -4,10 +4,19 @@ import 'package:flutter/services.dart';
 import 'package:sunmi_scan/src/scan_resolution_enum.dart';
 import 'package:sunmi_scan/src/scan_result.dart';
 
+///商米扫描插件
+///
+///sunmi scan plugin
 class SunmiScan {
   static const MethodChannel _channel = MethodChannel('sunmi_scan');
   static const EventChannel _eventChannel = EventChannel('sunmi_scan/scanner');
+
+  /// scan stream
   static late Stream<ScanResult> stream;
+
+  /// initiate of sunmi plugin
+  ///
+  /// 初始化商米扫描插件
   static Stream<ScanResult> init() {
     stream = _eventChannel
         .receiveBroadcastStream()
@@ -56,6 +65,9 @@ class SunmiScan {
   }
 
   /// 扫码
+  /// 
+  /// > call `SunmiScan.init()` before scan
+  /// > 使用前请初始化 `SunmiScan.init()`
   ///
   /// scan code
   ///

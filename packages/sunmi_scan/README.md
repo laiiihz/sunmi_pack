@@ -2,6 +2,10 @@
 
 ## Getting Started
 
+* initiate
+
+> call `SunmiScan.init()` before scan
+
 * scan
 
 ```dart

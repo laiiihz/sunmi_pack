@@ -1,13 +1,20 @@
 import 'dart:convert';
 
+/// scan result
+///
+/// 扫描结果
 class ScanResult {
+  /// scan type
   final String type;
+
+  /// scan value
   final String value;
   ScanResult({
     required this.type,
     required this.value,
   });
 
+  /// convert object to map
   Map<String, dynamic> toMap() {
     return {
       'type': type,
@@ -15,6 +22,7 @@ class ScanResult {
     };
   }
 
+  /// get object from map
   factory ScanResult.fromMap(Map<String, dynamic> map) {
     return ScanResult(
       type: map['type'] ?? '',
@@ -22,8 +30,10 @@ class ScanResult {
     );
   }
 
+  /// convert object to json
   String toJson() => json.encode(toMap());
 
+  /// get object from json string
   factory ScanResult.fromJson(String source) =>
       ScanResult.fromMap(json.decode(source));
 
